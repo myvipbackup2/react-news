@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df3272af-8fe8-4151-8346-9ab87a16d1ab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/pc/loginForm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/pc/registerForm.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/pc/header.js" afterPath="$PROJECT_DIR$/src/components/pc/header.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/pc.css" afterPath="$PROJECT_DIR$/src/css/pc.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/pc/registerForm.js" afterPath="$PROJECT_DIR$/src/components/pc/registerForm.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,35 +44,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mobile.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/mobile.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="header.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/pc/header.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
+            <state relative-caret-position="-648">
+              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
               <folding>
                 <element signature="e#46#71#0" expanded="true" />
-                <element signature="n#!!block;n#handleClick#0;n#PcHeader#0" expanded="false" />
-                <element signature="e#1435#3423#0" expanded="false" />
+                <element signature="e#1923#3512#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registerForm.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="registerForm.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/pc/registerForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="168" column="52" lean-forward="false" selection-start-line="168" selection-start-column="52" selection-end-line="168" selection-end-column="52" />
+            <state relative-caret-position="690">
+              <caret line="129" column="28" lean-forward="true" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="28" />
               <folding>
                 <element signature="e#46#71#0" expanded="true" />
               </folding>
@@ -94,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pc.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pc.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/pc.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+            <state relative-caret-position="572">
+              <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -142,6 +129,8 @@
       <find>test: /\.(js|jsx)$/,</find>
       <find>MenuItemGroup</find>
       <find>RegistrationForm</find>
+      <find>Option</find>
+      <find>SubMenu</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -163,10 +152,10 @@
         <option value="$PROJECT_DIR$/src/components/mobile/index.js" />
         <option value="$PROJECT_DIR$/src/css/mobile.css" />
         <option value="$PROJECT_DIR$/src/components/mobile/header.js" />
-        <option value="$PROJECT_DIR$/src/components/pc/header.js" />
-        <option value="$PROJECT_DIR$/src/components/pc/registerForm.js" />
         <option value="$PROJECT_DIR$/src/components/pc/loginForm.js" />
         <option value="$PROJECT_DIR$/src/css/pc.css" />
+        <option value="$PROJECT_DIR$/src/components/pc/registerForm.js" />
+        <option value="$PROJECT_DIR$/src/components/pc/header.js" />
       </list>
     </option>
   </component>
@@ -422,7 +411,7 @@
       <workItem from="1499666712426" duration="2916000" />
       <workItem from="1499670251156" duration="2079000" />
       <workItem from="1499672629470" duration="370000" />
-      <workItem from="1499673133635" duration="13313000" />
+      <workItem from="1499673133635" duration="14762000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1499668070746</created>
@@ -459,11 +448,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499680976999</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="登录注册modal">
+      <created>1499741430568</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1499741430568</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18678000" />
+    <option name="totallyTimeSpent" value="20127000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -526,7 +522,8 @@
     <MESSAGE value="init Ant Design" />
     <MESSAGE value="init Ant Design then npm run eject" />
     <MESSAGE value="完成基础架构 header和footer 按需加载antd" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成基础架构 header和footer 按需加载antd" />
+    <MESSAGE value="登录注册modal" />
+    <option name="LAST_COMMIT_MESSAGE" value="登录注册modal" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -904,16 +901,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pc/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="e#46#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -922,43 +909,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/mobile/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <element signature="e#46#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/antd/dist/antd.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="43872" column="8" lean-forward="false" selection-start-line="43872" selection-start-column="8" selection-end-line="43872" selection-end-column="8" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pc/registerForm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="168" column="52" lean-forward="false" selection-start-line="168" selection-start-column="52" selection-end-line="168" selection-end-column="52" />
-          <folding>
-            <element signature="e#46#71#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/pc/header.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="44" column="43" lean-forward="false" selection-start-line="44" selection-start-column="43" selection-end-line="44" selection-end-column="43" />
-          <folding>
-            <element signature="e#46#71#0" expanded="true" />
-            <element signature="n#!!block;n#handleClick#0;n#PcHeader#0" expanded="false" />
-            <element signature="e#1435#3423#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -974,9 +929,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/pc.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+        <state relative-caret-position="572">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/mobile/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="e#46#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pc/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+          <folding>
+            <element signature="e#46#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pc/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648">
+          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="e#46#71#0" expanded="true" />
+            <element signature="e#1923#3512#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/pc/registerForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="129" column="28" lean-forward="true" selection-start-line="129" selection-start-column="28" selection-end-line="129" selection-end-column="28" />
+          <folding>
+            <element signature="e#46#71#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

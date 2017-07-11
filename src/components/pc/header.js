@@ -2,25 +2,24 @@
  * Created by zixiangli on 2017/7/10.
  */
 import React from 'react'
-import {Row, Col, Menu, Icon, Form, Input, Button, Checkbox, Modal, Tabs, message} from 'antd'
+import {Row, Col, Menu, Icon, Modal, Tabs, message} from 'antd'
 import LoginForm from './loginForm'
 import RegisterForm from './registerForm'
 
-const {SubMenu, MenuItemGroup} = Menu;
-//注册登录表单相关，另外用到了Modal模态窗、选项卡Tabs、message全局提示
 const {TabPane} = Tabs;//选项卡
 
 class PcHeader extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            current: 'top',
+            current: 'top',  //控制tab下划线
+            showModal: false,  //控制登录注册弹层
         }
     }
 
     handleClick(e) { //响应头部tab ，e是个对象
         if (e.key === 'userTab') {
-
+            this.showModal(true);
         } else {
             this.setState({
                 current: e.key,
@@ -28,13 +27,22 @@ class PcHeader extends React.Component {
         }
     };
 
+    //封装设置modal显示隐藏的方法
+    showModal(val) {
+        this.setState({
+            showModal: val
+        });
+    }
+
     render() {
         return (
             <div>
                 {/* Modal */}
                 <Modal title="用户中心"
-                       visible={true}
-                       onCancel={true}
+                       visible={this.state.showModal}
+                       onCancel={() => {
+                           this.showModal(false);
+                       }}
                        footer={null}
                 >
                     <Tabs defaultActiveKey="login">
