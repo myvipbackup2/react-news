@@ -12,3 +12,22 @@
 .footer {
     text-align: center;
 }
+
+.userTab {
+    float: right !important;
+}
+
+/*登录表单*/
+
+.login-form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.login-form-forgot {
+    float: right;
+}
+
+.login-form-button {
+    width: 100%;
+}
