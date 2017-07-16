@@ -4,8 +4,7 @@
 import React from 'react'
 import {Carousel} from 'antd'
 
-//Json Bird 代理跨域
-const JsonBird = 'https://bird.ioliu.cn/v1?url=';
+import {focus} from '../../fetch/api'
 
 class Banner extends React.Component {
     constructor(props) {
@@ -16,11 +15,11 @@ class Banner extends React.Component {
     }
 
     componentWillMount() {
-        fetch(JsonBird + "https://www.toutiao.com/api/pc/hot_video/?widen=1")  //今日头条API
+        fetch(focus)  //今日头条API
             .then(res => res.json())
             .then(jsonData => {
-                this.setState({img: jsonData.data});
-                console.log(jsonData.data)
+                this.setState({img: jsonData.data['pc_feed_focus']});
+                // console.log(jsonData.data)
             });
     }
 
@@ -29,15 +28,19 @@ class Banner extends React.Component {
         const settings = {
             dots: true,
             infinite: true,
-            speed: 100,
+            speed: 500,
             slidesToShow: 1,
+            arrows: true,
             autoplay: true
         };
         const imgList = this.state.img.length
             ? this.state.img.map((item, index) => (
-                <div key={item.display_url}><img alt={item.title} title={item.title} src={item.pc_image_url}/></div>
+                <div key={item['group_id']}>
+                    <img alt={item.title} title={item.title} src={item['image_url']}/>
+                    <p>{item.title}</p>
+                </div>
             ))
-            : <div><img alt="error" src="http://ghj.km.gov.cn/imgs/index121129/error.png"/></div>;
+            : <div><img alt="error" title="出错啦！" src="http://ghj.km.gov.cn/imgs/index121129/error.png"/></div>;
 
         return (
             <Carousel {...settings}>

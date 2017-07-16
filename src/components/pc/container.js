@@ -4,6 +4,7 @@
 import React from 'react'
 import {Row, Col, Tabs} from 'antd'
 import Banner from '../common/banner'
+import PCNewsImgBlock from './newsImgBlock'
 
 const {TabPane} = Tabs;
 
@@ -22,7 +23,7 @@ class PcContainer extends React.Component {
                                 <Banner/>
                             </div>
                             {/* PCNewsImgBlock模块：通过传递参数来动态显示内容 */}
-                            {/*<PCNewsImgBlock width="400px" cartTitle="国际头条" type="guoji" count={6} imageWidth="112px"/>*/}
+                            <PCNewsImgBlock width="400px" count='6' cartTitle="热点" imageWidth="112px"/>
                         </div>
                         {/* 头部列表 */}
                         <Tabs className="tabs_news">

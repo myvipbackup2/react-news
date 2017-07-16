@@ -87,6 +87,8 @@
 .carousel {
     width: 400px;
     float: left;
+    position: relative;
+    /*cursor: pointer;*/
 }
 
 .carousel img {
@@ -94,11 +96,25 @@
     height: 260px;
 }
 
+.carousel p {
+    position: absolute;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    color: #fff;
+    bottom: 25px;
+    width: 400px;
+    background-image: linear-gradient(-180deg, transparent, rgba(0, 0, 0, .8));
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
 .topNewsList {
     float: left;
     text-align: left;
     font-size: 14px;
-    margin-bottom: 10px;
+    margin: 5px 0 10px;
 }
 
 .topNewsList a {
