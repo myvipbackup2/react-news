@@ -4,6 +4,9 @@
 import React from 'react'
 import {Carousel} from 'antd'
 
+//Json Bird 代理跨域
+const JsonBird = 'https://bird.ioliu.cn/v1?url=';
+
 class Banner extends React.Component {
     constructor(props) {
         super(props);
@@ -13,11 +16,11 @@ class Banner extends React.Component {
     }
 
     componentWillMount() {
-        fetch("http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=top&count=5")
+        fetch(JsonBird + "https://www.toutiao.com/api/pc/hot_video/?widen=1")  //今日头条API
             .then(res => res.json())
             .then(jsonData => {
-                this.setState({img: jsonData});
-                // console.log(jsonData)
+                this.setState({img: jsonData.data});
+                console.log(jsonData.data)
             });
     }
 
@@ -26,15 +29,15 @@ class Banner extends React.Component {
         const settings = {
             dots: true,
             infinite: true,
-            speed: 500,
+            speed: 100,
             slidesToShow: 1,
             autoplay: true
         };
         const imgList = this.state.img.length
             ? this.state.img.map((item, index) => (
-                <div key={index}><img src={item.thumbnail_pic_s03}/></div>
+                <div key={item.display_url}><img alt={item.title} title={item.title} src={item.pc_image_url}/></div>
             ))
-            : <div><img src="http://ghj.km.gov.cn/imgs/index121129/error.png"/></div>;
+            : <div><img alt="error" src="http://ghj.km.gov.cn/imgs/index121129/error.png"/></div>;
 
         return (
             <Carousel {...settings}>

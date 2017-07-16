@@ -88,9 +88,6 @@ class PcHeader extends React.Component {
                             <Menu.Item key="keji">
                                 <Icon type="code"/>科技
                             </Menu.Item>
-                            <Menu.Item key="shishang">
-                                <Icon type="apple"/>时尚
-                            </Menu.Item>
                             <Menu.Item className="userTab" key="userTab">
                                 <Icon type="login"/>注册/登录
                             </Menu.Item>

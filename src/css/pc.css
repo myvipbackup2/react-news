@@ -25,7 +25,7 @@
 /*登录表单*/
 
 .login-form {
-    margin: 0 auto;
+    margin: 25px auto 0;
     width: 70%;
 }
 
@@ -35,6 +35,10 @@
 
 .login-form-button {
     width: 100%;
+}
+
+.register-form {
+    margin-top: 25px;
 }
 
 .ant-menu-horizontal > .ant-menu-item > a, .ant-menu-horizontal > .ant-menu-submenu > a {
