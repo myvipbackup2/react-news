@@ -5,6 +5,7 @@ import React from 'react'
 import {Row, Col, Tabs} from 'antd'
 import Banner from '../common/banner'
 import PCNewsImgBlock from './newsImgBlock'
+import PCNewsBlock from './newsBlock'
 
 const {TabPane} = Tabs;
 
@@ -27,20 +28,20 @@ class PcContainer extends React.Component {
                         </div>
                         {/* 头部列表 */}
                         <Tabs className="tabs_news">
-                            <TabPane tab="头条新闻" key="1">
-                                {/*<PCNewsBlock type="top" count={22}/>*/}
+                            <TabPane tab="科技" key="topNews">
+                                <PCNewsBlock type="technology"/>
                             </TabPane>
-                            <TabPane tab="国际" key="2">
-                                {/*<PCNewsBlock count={22} type="guoji"/>*/}
+                            <TabPane tab="体育" key="sports">
+                                <PCNewsBlock type="sports"/>
                             </TabPane>
                         </Tabs>
 
-                        {/*<div>*/}
-                        {/*<PCNewsImgBlock count={8} type="guonei" width="1200px" cartTitle="国内新闻" imageWidth="136px"/>*/}
-                        {/*<PCNewsImgBlock count={16} type="yule" width="1200px" cartTitle="娱乐新闻" imageWidth="136px"/>*/}
-                        {/*</div>*/}
+                        <div>
+                        <PCNewsImgBlock count={8} type="guonei" width="1200px" cartTitle="国内新闻" imageWidth="136px"/>
+                        <PCNewsImgBlock count={16} type="yule" width="1200px" cartTitle="娱乐新闻" imageWidth="136px"/>
+                        </div>
                     </Col>
-                    {/*<Col span={2}></Col>*/}
+                    <Col span={2}></Col>
                 </Row>
             </div>
         );

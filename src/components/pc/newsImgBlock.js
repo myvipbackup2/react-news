@@ -24,7 +24,7 @@ class PCNewsImgBlock extends React.Component {
                 this.setState({
                     news: jsonData.data.slice(0, this.props.count)
                 });
-                console.log(this.state.news);
+                // console.log(this.state.news);
             }
         )
 
