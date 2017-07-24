@@ -37,8 +37,8 @@ class PcContainer extends React.Component {
                         </Tabs>
 
                         <div>
-                        <PCNewsImgBlock count={8} type="guonei" width="1200px" cartTitle="国内新闻" imageWidth="136px"/>
-                        <PCNewsImgBlock count={16} type="yule" width="1200px" cartTitle="娱乐新闻" imageWidth="136px"/>
+                        <PCNewsImgBlock type="guonei" width="1200px" cartTitle="国内新闻" imageWidth="136px"/>
+                        <PCNewsImgBlock type="yule" width="1200px" cartTitle="娱乐新闻" imageWidth="136px"/>
                         </div>
                     </Col>
                     <Col span={2}></Col>
