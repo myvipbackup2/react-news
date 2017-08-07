@@ -22,7 +22,9 @@ class PCNewsImgBlock extends React.Component {
         ).then(
             jsonData => {
                 this.setState({
-                    news: jsonData.data.slice(0, this.props.count)
+                    news: jsonData.data.filter(item => { //删掉没有图片的广告信息
+                        return item['image_url']
+                    }).slice(0, this.props.count)
                 });
                 // console.log(this.state.news);
             }
@@ -48,8 +50,8 @@ class PCNewsImgBlock extends React.Component {
         const news = this.state.news;
         //循环数据到模板
         const newsList = news.length
-            ? news.map((item, index) => (
-                <div key={index} className="imageblock">
+            ? news.map((item) => (
+                <div key={item.title} className="imageblock">
                     {/*<Link to={`details/${item.uniquekey}`} target="_blank">*/}
                     <div className="custom-image">
                         <img style={styleImg}
